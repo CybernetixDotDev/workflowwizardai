@@ -234,7 +234,7 @@ function ResourcesSection() {
           {resources.map((resource) => (
             <ElegantCard
               key={resource}
-              className="grid min-h-32 place-items-center text-center text-lg font-extrabold text-slate-950"
+              className="grid min-h-32 place-items-center border-transparent bg-gradient-to-br from-blue-500 to-violet-500 text-center text-lg font-extrabold text-white shadow-[0_18px_42px_rgba(91,119,255,0.24)] hover:border-transparent hover:shadow-[0_24px_60px_rgba(91,119,255,0.34)]"
             >
               {resource}
             </ElegantCard>
