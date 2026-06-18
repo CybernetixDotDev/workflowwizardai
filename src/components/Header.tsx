@@ -2,7 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { AnimatedWizardLogo } from "./AnimatedWizardLogo";
 
-const navItems = ["Tools", "Guides", "Templates", "Comparisons", "About"];
+const navItems = [
+  { label: "Tools", href: "/#tools" },
+  { label: "Guides", href: "/#guides" },
+  { label: "Templates", href: "/#templates" },
+  { label: "Comparisons", href: "/#comparisons" },
+  { label: "About", href: "/about" },
+];
 
 export function Header() {
   return (
@@ -28,13 +34,13 @@ export function Header() {
           aria-label="Primary navigation"
         >
           {navItems.map((item) => (
-            <a
-              key={item}
-              href={`#${item.toLowerCase()}`}
+            <Link
+              key={item.label}
+              href={item.href}
               className="transition hover:text-blue-600"
             >
-              {item}
-            </a>
+              {item.label}
+            </Link>
           ))}
         </nav>
         <a

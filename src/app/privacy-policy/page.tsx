@@ -3,7 +3,7 @@ import Link from "next/link";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Workflow Wizard AI",
+  title: "Privacy Policy",
   description:
     "Learn how Workflow Wizard AI collects, uses, protects, and manages personal information.",
 };

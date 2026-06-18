@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { CookieDisclaimer } from "@/components/CookieDisclaimer";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,9 +15,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Workflow Wizard AI | Making AI Automations Feel Like Magic",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Workflow Wizard AI | Practical AI Automation",
+    template: "%s | Workflow Wizard AI",
+  },
   description:
     "Simple AI tips, tools, and automations for small business owners who want to save time without complexity.",
+  applicationName: "Workflow Wizard AI",
+  keywords: [
+    "AI automation",
+    "small business AI",
+    "AI tools",
+    "workflow automation",
+    "business productivity",
+  ],
+  openGraph: {
+    type: "website",
+    siteName: "Workflow Wizard AI",
+    title: "Workflow Wizard AI | Practical AI Automation",
+    description:
+      "Simple AI tools, practical automations, and clear guidance for small business owners.",
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Workflow Wizard AI | Practical AI Automation",
+    description:
+      "Simple AI tools, practical automations, and clear guidance for small business owners.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

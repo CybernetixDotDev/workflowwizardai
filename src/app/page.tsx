@@ -284,9 +284,9 @@ function Footer() {
           className="flex flex-wrap justify-center gap-2 font-bold sm:justify-end"
           aria-label="Footer navigation"
         >
-          <a href="#" className="transition hover:text-violet-600">
+          <Link href="/about" className="transition hover:text-violet-600">
             About
-          </a>
+          </Link>
           <a href="#" className="transition hover:text-violet-600">
             Resources
           </a>

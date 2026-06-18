@@ -3,7 +3,7 @@ import Link from "next/link";
 import { LegalPage } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
-  title: "Terms and Conditions | Workflow Wizard AI",
+  title: "Terms and Conditions",
   description:
     "The terms governing access to and use of the Workflow Wizard AI website and resources.",
 };
